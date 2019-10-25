@@ -1,0 +1,10 @@
+@mixin maincontainerWidth{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+@mixin maincontainerMobileWidth{
+	width: calc(100% - 30px) !important;
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}

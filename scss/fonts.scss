@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Gotham-Medium';
+	src: url('../fonts/gotham/Gotham-Medium.eot'); 
+	src: local('☺'), 
+	url('../fonts/gotham/Gotham-Medium.woff') format('woff'), 
+	url('../fonts/gotham/Gotham-Medium.ttf') format('truetype'), 
+	url('../fonts/gotham/Gotham-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'tatishvili_bold';
+    src: url('../fonts/tatishvili/gl-tatishvili-metal-bold-webfont.woff2') format('woff2'),
+         url('../fonts/tatishvili/gl-tatishvili-metal-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tatishvili_normal';
+    src: url('../fonts/tatishvili-normal/gl-tatishvili-12-normal-webfont.woff2') format('woff2'),
+         url('../fonts/tatishvili-normal/gl-tatishvili-12-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'firagoregular';
+    src: url('../fonts/firaGo-normal/firago-regular-webfont.woff2') format('woff2'),
+         url('../fonts/firaGo-normal/firago-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -42,6 +42,8 @@ var detectmob = () => {
 	if(typeof document.getElementsByClassName("content")[0] !== "undefined"){
 		setTimeout(function(){
 			document.getElementsByClassName("content")[0].classList.add("content-up");
+			document.getElementsByClassName("header_wrapper")[0].classList.add("content-up");
+			
 		}, 1500);
 	};
 

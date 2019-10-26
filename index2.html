@@ -25,10 +25,7 @@
     position: relative
 }
 
-.content .slider-box{
-      z-index: 10000;
-    height: 100vh;
-}
+
 .content{
   position: relative;
       top: 100vh;
@@ -83,16 +80,60 @@ body {
     height: 100vh;
     z-index: 60000;
   }
-  .loader{
-  height: 100vh;
-  z-index: 1;
-  background: #fff;
-  }
+ 
   </style>
 </head>
 <body>
 
-  
+  <div class="loader">
+  <img src="img/loader.gif" alt="" />
+</div>
+
+  <div class="header_wrapper">
+      
+    <div class="logo">
+      <a href="#">logo</a>
+    </div>
+
+    <div class="contact">
+      <div class="info phone">+995 532 100 2000</div>
+      <div class="info address">დიდუბე, ვანის ქუჩა 4, თბილისი</div>
+    </div>
+
+    <div class="right">
+      <div class="nav-btn" data-opened="false">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+
+      <div class="hor-line"></div>
+
+      <ul class="social">
+        <li><a href="#" class="instagram">i</a></li>
+        <li><a href="#" class="facebook">f</a></li>
+      </ul>
+    </div>
+   
+
+    <nav class="nav">
+      <ul class="main">
+        <li class="active"><a href="#">მთავარი</a></li>
+        <li>
+          <a href="#">ბინები</a>
+           <ul class="sub">
+            <li><a href="#">ბინა 50კვ</a></li>
+            <li><a href="#">ბინა 55კვ</a></li>
+            <li><a href="#">ბინა 60კვ</a></li>
+            <li><a href="#">ბინა 65კვ</a></li>
+            <li><a href="#">ბინა 70კვ</a></li>
+           </ul>
+        </li>
+        <li><a href="#">მშენებლობა</a></li>
+      </ul>
+    </nav>
+     </div>
+
   <section class="viewport">
 
     
@@ -101,11 +142,12 @@ body {
 
 
 <div class="content">
-  <div class="loader">
-  <img src="img/loader.gif" alt="" />
-</div>
+  
   <div id="go-top" style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; opacity: 0;"></div>
-  <div class="slider-box">    
+ 
+
+  <header>
+     <div class="slider-box">    
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url('img/slide.jpg');">
@@ -150,47 +192,6 @@ body {
     </div>
   </div>
 
-  <header>
-    <div class="logo">
-      <a href="#">logo</a>
-    </div>
-
-    <div class="contact">
-      <div class="info phone">+995 532 100 2000</div>
-      <div class="info address">დიდუბე, ვანის ქუჩა 4, თბილისი</div>
-    </div>
-
-    <div class="right">
-      <div class="nav-btn" data-opened="false">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-      </div>
-
-      <div class="hor-line"></div>
-
-      <ul class="social">
-        <li><a href="#" class="instagram">i</a></li>
-        <li><a href="#" class="facebook">f</a></li>
-      </ul>
-    </div>
-
-    <nav class="nav">
-      <ul class="main">
-        <li class="active"><a href="#">მთავარი</a></li>
-        <li>
-          <a href="#">ბინები</a>
-           <ul class="sub">
-            <li><a href="#">ბინა 50კვ</a></li>
-            <li><a href="#">ბინა 55კვ</a></li>
-            <li><a href="#">ბინა 60კვ</a></li>
-            <li><a href="#">ბინა 65კვ</a></li>
-            <li><a href="#">ბინა 70კვ</a></li>
-           </ul>
-        </li>
-        <li><a href="#">მშენებლობა</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section class="yourhouse" id="yourhouse">
@@ -324,7 +325,7 @@ body {
     </div>
   </section>
 
-  <section class="render" id="render">
+  <section class="render hideme" id="render">
     <h2>შეარჩიე ბინა</h2>
 
     <div class="the">
@@ -553,6 +554,7 @@ body {
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jiji.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.maphilight.js"></script> 
 <script src="js/imageMapResizer.min.js"></script> 

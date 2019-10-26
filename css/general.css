@@ -166,10 +166,6 @@ a {
     background-color: transparent
 }
 
-a:hover {
-    color: #0056b3;
-    text-decoration: underline
-}
 
 a:not([href]):not([tabindex]) {
     color: inherit;
@@ -600,6 +596,17 @@ pre code {
     .container {
         max-width: 1140px
     }
+}
+
+@media (max-width: 575px) {
+.content .advantage .nav-item {
+        width: 25% !important;
+    }
+    .nav-open {
+    
+    transform: translateX(calc(100% + -82px)) !important;
+}
+
 }
 
 .container-fluid {
@@ -8639,6 +8646,8 @@ button.bg-dark:hover {
     .m-sm-0 {
         margin: 0 !important
     }
+
+
     .mt-sm-0,
     .my-sm-0 {
         margin-top: 0 !important
@@ -10735,14 +10744,14 @@ nav {
     background-color: black;
     position: absolute;
     top: 0;
-    right: -120%;
+    /* right: -120%; */
     z-index: 5;
-    transition-duration: 350ms;
-    transition-property: right;
-    transition-timing-function: ease-in-out;
-    -webkit-box-shadow: -5px 5px 10px -4px #000;
-    -moz-box-shadow: -5px 5px 10px -4px #000;
-    box-shadow: -5px 5px 10px -4px #000
+        transform: translateX(calc(100% + 305px));
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: -webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    -o-transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98),-webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
 }
 
 nav ul {
@@ -10775,6 +10784,18 @@ nav ul li a {
     font-family: 'tatishvili_normal'
 }
 
+.nav-open {
+-webkit-transform: translateZ(0);
+    transform: translateX(94%);
+    -webkit-transition: -webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: -webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    -o-transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+    transition: transform 1.2s cubic-bezier(.16,1.08,.38,.98),-webkit-transform 1.2s cubic-bezier(.16,1.08,.38,.98);
+}
+
+
+
 nav ul li ul {
     margin: 0;
     float: right;
@@ -10800,11 +10821,10 @@ nav ul .active a {
 
 nav ul li a:hover {
     opacity: 1
+
 }
 
-.nav-open {
-    right: -55%
-}
+
 
 .content .yourhouse {
     margin: 0;
@@ -10903,8 +10923,8 @@ nav ul li a:hover {
 .content .advantage {
     margin: 0 auto;
     width: 1200px;
-    margin: 250px auto 0 auto;
-    padding: 100px 0;
+    margin: 300px auto 0 auto;
+    /* padding: 100px 0; */
     position: relative;
     background-color: white;
     z-index: 1000
@@ -12735,7 +12755,7 @@ nav ul li a:hover {
         margin-left: 15px !important;
         margin-right: 15px !important
     }
-    .content header .logo a {
+    .logo a {
         width: 120px !important;
         height: 80px !important;
         margin-top: 15px !important
@@ -12755,10 +12775,7 @@ nav ul li a:hover {
     .content .slider-box .carousel .carousel-inner .carousel-item .sliderText .nums {
         margin: 15px 0 0 0
     }
-    .nav-open {
-        right: -20% !important;
-        width: 100% !important
-    }
+   
     nav ul {
         width: calc(80% - 40px) !important
     }

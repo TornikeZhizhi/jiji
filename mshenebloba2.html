@@ -7,6 +7,68 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 	<title>Garden</title>
 	<link rel="stylesheet" type="text/css" href="css/general.css" />
+	<link rel="stylesheet" type="text/css" href="css/jijis.css" />
+
+
+	 <style type="text/css">
+    *, :after, :before {
+    box-sizing: border-box;
+}
+
+.content{
+  position: relative;
+      top: 100vh;
+  width: 100%;
+}
+.content-up {
+    top: 0px;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {  
+  width: 100%;
+  position: absolute;  
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;  
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.img-container {
+  margin: 0 0 50px;
+  
+}
+
+.img-container  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  body{
+    overflow: unset;
+  }
+  .content header{
+    height: 100vh;
+    z-index: 60000;
+  }
+ 
+  </style>
 </head>
 <body>
 
@@ -14,60 +76,70 @@
 	<img src="img/loader.gif" alt="" />
 </div>
 
+<div class="header_wrapper">
+      
+    <div class="logo">
+      <a href="#">logo</a>
+    </div>
+
+    <div class="contact">
+      <div class="info phone">+995 532 100 2000</div>
+      <div class="info address">დიდუბე, ვანის ქუჩა 4, თბილისი</div>
+    </div>
+
+    <div class="right">
+      <div class="nav-btn" data-opened="false">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+
+      <div class="hor-line"></div>
+
+      <ul class="social">
+        <li><a href="#" class="instagram">i</a></li>
+        <li><a href="#" class="facebook">f</a></li>
+      </ul>
+    </div>
+   
+
+    <nav class="nav">
+      <ul class="main">
+        <li class="active"><a href="#">მთავარი</a></li>
+        <li>
+          <a href="#">ბინები</a>
+           <ul class="sub">
+            <li><a href="#">ბინა 50კვ</a></li>
+            <li><a href="#">ბინა 55კვ</a></li>
+            <li><a href="#">ბინა 60კვ</a></li>
+            <li><a href="#">ბინა 65კვ</a></li>
+            <li><a href="#">ბინა 70კვ</a></li>
+           </ul>
+        </li>
+        <li><a href="#">მშენებლობა</a></li>
+      </ul>
+    </nav>
+     </div>
+
+<section class="viewport">
+
+<div id="scroll-container" class="scroll-container">             
+
 <div class="content">
 	<div id="go-top" style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; opacity: 0;"></div>
 	
 
-	<section class="slider-box inside-image" style="background-image: url('../img/msheneblobaR.png');">
+	
+	
+	<header class="inside">
+		<section class="slider-box inside-image" style="background-image: url('../img/msheneblobaR.png');">
 		<div class="inside-title">
 			<h1>მშენებლობა</h1>
 		</div>
 	</section>
-	
-	<header class="inside">
-		<div class="logo">
-			<a href="#">logo</a>
-		</div>
-
-		<div class="contact">
-			<div class="info phone">+995 532 100 2000</div>
-			<div class="info address">დიდუბე, ვანის ქუჩა 4, თბილისი</div>
-		</div>
-
-		<div class="right">
-			<div class="nav-btn" data-opened="false">
-				<div class="line line1"></div>
-				<div class="line line2"></div>
-				<div class="line line3"></div>
-			</div>
-
-			<div class="hor-line"></div>
-
-			<ul class="social">
-				<li><a href="#" class="instagram">i</a></li>
-				<li><a href="#" class="facebook">f</a></li>
-			</ul>
-		</div>
-
-		<nav class="nav inside-nav">
-			<ul class="main">
-				<li class="active"><a href="#">მთავარი</a></li>
-				<li>
-					<a href="#">ბინები</a>
-					 <ul class="sub">
-					 	<li><a href="#">ბინა 50კვ</a></li>
-					 	<li><a href="#">ბინა 55კვ</a></li>
-					 	<li><a href="#">ბინა 60კვ</a></li>
-					 	<li><a href="#">ბინა 65კვ</a></li>
-					 	<li><a href="#">ბინა 70კვ</a></li>
-					 </ul>
-				</li>
-				<li><a href="#">მშენებლობა</a></li>
-			</ul>
-		</nav>
 	</header>
 
-	<section class="mshenebloba">
+	<section class="mshenebloba animation-element">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 m-black m-left-blank">
 				<h2>ზოგადი მიმოხილვა უსაფრთხოებაზე</h2>
@@ -78,8 +150,7 @@
 					<h3>დასახელება 1</h3>
 					<p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი</p>
 
-					<h3>დასახელება 1</h3>
-					<p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი</p>
+					
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12 m-white">
@@ -88,11 +159,11 @@
 		</div>
 	</section>
 
-	<section class="fullimage" style="background-image: url('img/adg.png');">
+	<section class="fullimage animation-element" style="background-image: url('img/adg.png');">
 		<h2>გამყოფი აქ რამე ეწეროს</h2>
 	</section>
 	
-	<section class="mshenebloba">
+	<section class="mshenebloba animation-element">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 m-white m-text">
 				<h2>ტექნიკურ ავარიული სერვისების ჩამონათვალი</h2>
@@ -114,7 +185,7 @@
 		</div>
 	</section>
 
-	<section class="mshenebloba">
+	<section class="mshenebloba animation-element">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 m-white mobile-hide">
 				<div class="m-bigimage m-left-grow" style="background-image: url('img/arc.png');"></div>
@@ -137,11 +208,11 @@
 		</div>
 	</section>
 
-	<section class="fullimage" style="background-image: url('img/gam2.png');">
+	<section class="fullimage animation-element" style="background-image: url('img/gam2.png');">
 		<h2>გამყოფი აქ რამე ეწეროს</h2>
 	</section>
 
-	<section class="mshenebloba">
+	<section class="mshenebloba animation-element">
 		<div class="row">
 			<div class="col-md-6 col-sm-12 m-white">
 				<div class="m-image-centered m-float-right" style="background-image: url('img/safty.png');"></div>
@@ -189,6 +260,8 @@
 		</div>
 	</footer>
 </div>
+</div>
+</section>
 
 
 <script src="js/jquery.js"></script>
@@ -198,6 +271,81 @@
 <script src="js/imageMapResizer.min.js"></script> 
 <script src="js/generalJquery.js"></script>
 <script src="js/general.js"></script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script type="text/javascript">
+	
+var html = document.documentElement;
+var body = document.body;
+
+var scroller = {
+  target: document.querySelector("#scroll-container"),
+  ease: 0.05, // <= scroll speed
+  endY: 0,
+  y: 0,
+  resizeRequest: 1,
+  scrollRequest: 0,
+};
+
+var requestId = null;
+
+TweenLite.set(scroller.target, {
+  rotation: 0.01,
+  force3D: true
+});
+
+window.addEventListener("load", onLoad);
+
+function onLoad() {    
+  updateScroller();  
+  window.focus();
+  window.addEventListener("resize", onResize);
+  document.addEventListener("scroll", onScroll); 
+}
+
+function updateScroller() {
+  
+  var resized = scroller.resizeRequest > 0;
+    
+  if (resized) {    
+    var height = scroller.target.clientHeight;
+    body.style.height = height + "px";
+    scroller.resizeRequest = 0;
+  }
+      
+  var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+  scroller.endY = scrollY;
+  scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+    scroller.y = scrollY;
+    scroller.scrollRequest = 0;
+  }
+  
+  TweenLite.set(scroller.target, { 
+    y: -scroller.y 
+  });
+  
+  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+}
+
+function onScroll() {
+  scroller.scrollRequest++;
+  if (!requestId) {
+    requestId = requestAnimationFrame(updateScroller);
+  }
+}
+
+function onResize() {
+  scroller.resizeRequest++;
+  if (!requestId) {
+    requestId = requestAnimationFrame(updateScroller);
+  }
+}
+</script>
+
 
 
 </body>
